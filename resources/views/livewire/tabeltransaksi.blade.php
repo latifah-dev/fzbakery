@@ -18,7 +18,7 @@
             method: 'POST',
         })
         .then( (response) => {
-            window.location.replace('http://127.0.0.1:3000/dashboard/tasklist')
+            window.location.replace('https://fzbakery.fly.dev/dashboard/tasklist')
         });
     }
     }))

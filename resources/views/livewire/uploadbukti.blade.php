@@ -11,7 +11,7 @@
   		fetchitem() {
     		const id = this.url[this.url.length-1]
             const data = new FormData()
-            const respon = fetch(`http://127.0.0.1:8000/api/transaksi/${id}`)
+            const respon = fetch(`https://friendzone-bakery.fly.dev/api/transaksi/${id}`)
             .then(response => response.json())
             .then(data => {
             let cart = this.cart = data.data;
@@ -24,11 +24,11 @@
     const data = new FormData()
     data.append('photo', photo)
     data.append('status', "Terbayar")
-      const edit = fetch(`http://127.0.0.1:8000/api/transaksi/${idtrans}/edit`, {
+      const edit = fetch(`https://friendzone-bakery.fly.dev/api/transaksi/${idtrans}/edit`, {
 		method: 'POST',
         body: data
             });
-			window.location.replace(`http://127.0.0.1:3000/selesaitransaksi/${idtrans}`)
+			window.location.replace(`https://fzbakery.fly.dev/selesaitransaksi/${idtrans}`)
     }
 }));
 </script>

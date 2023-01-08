@@ -84,7 +84,7 @@
         .then(data => {
           let idTransaksi = (this.itemtransaksi = data.data.transaksiId);
           window.location.replace(
-            `http://127.0.0.1:3000/transaksi/${idTransaksi}`
+            `https://fzbakery.fly.dev/transaksi/${idTransaksi}`
           );
         });
     },

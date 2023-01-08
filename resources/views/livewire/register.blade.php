@@ -22,7 +22,7 @@
             method: 'POST',
             body: data
             });
-            window.location.replace('http://127.0.0.1:3000/login')
+            window.location.replace('https://fzbakery.fly.dev/login')
 
     }
   }))

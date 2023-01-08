@@ -36,7 +36,7 @@
             method: 'POST',
             body: data
             }).then(res => console.log(res));
-            window.location.replace('http://127.0.0.1:3000/dashboard/product')
+            window.location.replace('https://fzbakery.fly.dev/dashboard/product')
 
     }
   }))

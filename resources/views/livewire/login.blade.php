@@ -19,10 +19,10 @@
             let token = localStorage.setItem('token', user.auth.token)
             this.token = token
             if(user.user.roleid == '1' || user.user.roleid == '2' ){
-                window.location.replace('http://127.0.0.1:3000/dashboard')
+                window.location.replace('https://fzbakery.fly.dev/dashboard')
             }
             if(user.user.roleid == '3'){
-                window.location.replace('http://127.0.0.1:3000/')
+                window.location.replace('https://fzbakery.fly.dev/')
             }
             });
         }
